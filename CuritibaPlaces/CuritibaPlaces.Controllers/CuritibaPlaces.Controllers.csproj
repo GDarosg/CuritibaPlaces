@@ -49,11 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IControler.cs" />
+    <Compile Include="EnderecoController.cs" />
+    <Compile Include="IController.cs" />
+    <Compile Include="PlacesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Banco\Banco.csproj">
+      <Project>{dca073f3-1bdc-4108-a68a-206b0bf6d594}</Project>
+      <Name>Banco</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CuritibaPlaces.Model\CuritibaPlaces.Model.csproj">
       <Project>{e80fec44-746c-4bca-befd-a2cbba12e9d1}</Project>
       <Name>CuritibaPlaces.Model</Name>

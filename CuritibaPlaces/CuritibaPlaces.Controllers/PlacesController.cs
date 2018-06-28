@@ -8,26 +8,24 @@ using System.Threading.Tasks;
 
 namespace CuritibaPlaces.Controllers
 {
-    public class UsersController : IControler<User>
+    public class PlacesController : IControler<Place>
     {
-        private Context context = new Context();
-
-        public String Cadastrar(User entity)
+        Context context = new Context();
+        public string Cadastrar(Place entity)
         {
-            context.Users.Add(entity);
+            context.Places.Add(entity);
             context.SaveChanges();
-            return "Success";
+            return "success";
         }
 
-        public String Deletar(User entity)
+        public string Deletar(Place entity)
         {
-            context.Users.Remove(entity);
+            context.Places.Remove(entity);
             context.SaveChanges();
-            return "Success";
-
+            return "success";
         }
 
-        public String Editar(User entity)
+        public string Editar(Place entity)
         {
             context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             context.SaveChanges();

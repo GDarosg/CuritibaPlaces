@@ -8,9 +8,11 @@ namespace CuritibaPlaces.Controllers
 {
     interface IControler<T> where T : class
     {
-        void Cadastrar(T entity);
-        void Editar(int id, T entity);
-        void Deletar(int id);
-        T BuscarPorId(int id);
+        String Cadastrar(T entity);
+        String Editar( T entity);
+        String Deletar(T entity);
+        
     }
+
+    
 }

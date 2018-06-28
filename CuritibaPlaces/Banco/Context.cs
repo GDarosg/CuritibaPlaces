@@ -16,6 +16,11 @@ namespace Banco
 
         public DbSet<User> Users { get; set; }
 
+        public void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
         public  DbSet<Endereco> Enderecos { get; set; }
 
         public  DbSet<Place> Places { get; set; }
