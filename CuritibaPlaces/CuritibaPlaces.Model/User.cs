@@ -9,6 +9,7 @@ namespace CuritibaPlaces.Model
     public class User
     {
         public int Id{ get; set; }
+
         public String Nome { get; set; }
 
         public int Cpf { get; set; }

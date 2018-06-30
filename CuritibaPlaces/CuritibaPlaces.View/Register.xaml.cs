@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace CuritibaPlaces.View
 {
     /// <summary>
-    /// Interaction logic for Home.xaml
+    /// Lógica interna para Register.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class Register : Window
     {
-        public Home()
+        public Register()
         {
             InitializeComponent();
         }
