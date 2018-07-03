@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CuritibaPlaces.View"
         mc:Ignorable="d"
-        Title="home" Height="450" Width="319.073">
+        Title="home" Height="400" Width="350">
     <Grid>
 
-        <TextBlock HorizontalAlignment="Left" Margin="91,23,0,0" TextWrapping="Wrap" Text="Bem Vindo!" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Pescadero" Foreground="Blue" FontSize="25" />
-        <Button x:Name="rgtendereco" Content="Registrar Endereço" HorizontalAlignment="Left" Margin="82,183,0,0" VerticalAlignment="Top" Width="149" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
-        <Button x:Name="enderecocadastrados" Content="Endereços Cadastrados" Margin="87,130,82,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
-        <Button x:Name="pesquisarend" Content="Pesquisar Endereços" Margin="84,234,85,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="180" FontFamily="Pescadero" Foreground="Blue" FontSize="25" ><Run Text="  "/><Run Text=" "/><Run Text="Bem Vindo!"/></TextBlock>
+        <Button x:Name="rgtendereco" Content="Registrar Endereço" HorizontalAlignment="Left" Margin="82,183,0,0" VerticalAlignment="Top" Width="180" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
+        <Button x:Name="enderecocadastrados" Content="Endereços Cadastrados" Margin="82,130,80,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="enderecoCadastrado" RenderTransformOrigin="0.473,-0.282"/>
+        <Button x:Name="pesquisarend" Content="Pesquisar Endereços" Margin="82,235,80,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="Pesquisar" RenderTransformOrigin="0.473,-0.282"/>
 
     </Grid>
 </Window>

@@ -22,9 +22,15 @@ namespace CuritibaPlaces.View
         public EnderecosCadastrados()
         {
             InitializeComponent();
+
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
 
         }

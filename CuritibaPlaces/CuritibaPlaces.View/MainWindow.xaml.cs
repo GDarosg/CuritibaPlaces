@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CuritibaPlaces.Controllers;
+using CuritibaPlaces.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,41 @@ namespace CuritibaPlaces.View
     /// </summary>
     public partial class MainWindow : Window
     {
+        UsersController usersController = new UsersController();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            var register = new Register();
+            register.Show();
+            this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            String login = textBoxLogin.Text;
+            String password = passwordBox.Password;
+            if(login !=null && password!= null)
+            {
+                User user = usersController.SearchByLogin(login);
+                if (user != null && user.Password == password)
+                {
+                    var home = new home(user);
+                    home.Show();
+                    this.Close();
+                }
+                else{
+                    MessageBox.Show("Login ou Senha Incorretos");
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("preencha os campos!");
+            }
         }
     }
 }
