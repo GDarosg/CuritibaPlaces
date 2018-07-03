@@ -1,0 +1,17 @@
+﻿<Window x:Class="CuritibaPlaces.View.home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuritibaPlaces.View"
+        mc:Ignorable="d"
+        Title="home" Height="450" Width="319.073">
+    <Grid>
+
+        <TextBlock HorizontalAlignment="Left" Margin="91,23,0,0" TextWrapping="Wrap" Text="Bem Vindo!" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Pescadero" Foreground="Blue" FontSize="25" />
+        <Button x:Name="rgtendereco" Content="Registrar Endereço" HorizontalAlignment="Left" Margin="82,183,0,0" VerticalAlignment="Top" Width="149" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
+        <Button x:Name="enderecocadastrados" Content="Endereços Cadastrados" Margin="87,130,82,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
+        <Button x:Name="pesquisarend" Content="Pesquisar Endereços" Margin="84,234,85,0" VerticalAlignment="Top" Height="36" Foreground="Blue" Background="LightCoral" Click="btnRegister_Click" RenderTransformOrigin="0.473,-0.282"/>
+
+    </Grid>
+</Window>
